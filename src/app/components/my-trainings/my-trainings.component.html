@@ -1,0 +1,23 @@
+<div class="container">
+  <h3 class="mt-5 mb-5">Moje treningi</h3>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Klub</th>
+      <th scope="col">Data</th>
+      <th scope="col">Gole</th>
+      <th scope="col">Notatki</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let training of trainings let index=index">
+      <th>{{index + 1}}</th>
+      <td>{{training.club}}</td>
+      <td>{{training.date}}</td>
+      <td>{{training.goals}}</td>
+      <td>{{training.notes}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

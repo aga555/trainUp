@@ -16,6 +16,9 @@ export class TrainingService {
   getTrainingClubNames() {
     return this.httpClient.get<string[]>(Constants.TRAINING_CLUBS);
   }
+  getMyAllTrainings(){
+    return this.httpClient.get<Training[]>(Constants.TRAININGS_ALL);
+  }
 
   saveTraining(training: Training): Observable<Training> {
     return this.httpClient.post(Constants.TRAININGS_ALL, training).pipe(map(
