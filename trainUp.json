@@ -3,5 +3,19 @@
     "SEMP",
     "Footbal Kids"
   ],
-  "trainings": []
+  "trainings": [
+    {
+      "club": "SEMP",
+      "date": "2022-02-12",
+      "goals": 1,
+      "notes": "25",
+      "id": 1
+    },
+    {
+      "club": "Footbal Kids",
+      "date": "2022-02-12",
+      "goals": 5,
+      "id": 2
+    }
+  ]
 }

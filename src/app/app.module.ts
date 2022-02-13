@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewTrainingComponent } from './components/new-training/new-training.component';
 import { HomeComponent } from './components/home/home.component';
+import {FormsModule} from '@angular/forms';
+import {TrainingService} from './services/training.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,9 +17,11 @@ import { HomeComponent } from './components/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [TrainingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
