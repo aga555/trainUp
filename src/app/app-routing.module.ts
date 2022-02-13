@@ -7,11 +7,11 @@ import {MyTrainingsComponent} from './components/my-trainings/my-trainings.compo
 
 const routes: Routes = [
   {
-    path: 'newTraining',
+    path: 'new-training',
     component: NewTrainingComponent
   },
   {
-    path: 'myTrainings',
+    path: 'my-trainings',
     component: MyTrainingsComponent
   },
   {
